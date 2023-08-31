@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MovieCard } from "./MovieCard";
 import Transition from "./Transition";
-import title_logo from "../src/assets/images/lg_title.svg";
+import title_logo from "../assets/images/lg_title.svg";
 
 const Movie = () => {
   const current = new Date();

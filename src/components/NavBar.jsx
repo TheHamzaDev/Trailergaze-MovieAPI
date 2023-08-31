@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion, useCycle, AnimatePresence } from "framer-motion";
-import logo from "../logo_icon.svg";
-import close from "../close_menu_icon.svg";
-import menu from "../menu_icon.svg";
+import logo from "../../public/logo_icon.svg";
+import close from "../../public/close_menu_icon.svg";
+import menu from "../../public/menu_icon.svg";
 
 export const NavBar = () => {
   const [isOpen, cycleIsOpen] = useCycle(false, true);

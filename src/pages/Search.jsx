@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Transition from "../components/Transition";
 import { MovieCard } from "../components/MovieCard";
 import { motion } from "framer-motion";
-import search from "../src/assets/images/search_icon.svg";
+import search from "../assets/images/search_icon.svg";
 
 const Search = () => {
   const SEARCH_API =

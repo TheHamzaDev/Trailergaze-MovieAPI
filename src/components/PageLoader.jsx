@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import star from "../src/assets/images/star.svg";
+import star from "../assets/images/star.svg";
 
 export const PageLoader = () => {
   return (

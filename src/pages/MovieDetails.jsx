@@ -3,7 +3,7 @@ import Transition from "../components/Transition";
 import { Link, useLocation } from "react-router-dom";
 import ReactPlayer from "react-player/youtube";
 import { motion } from "framer-motion";
-import arrow from "../src/assets/images/arrow_br.svg";
+import arrow from "../assets/images/arrow_br.svg";
 
 const MovieDetails = () => {
   const location = useLocation();
