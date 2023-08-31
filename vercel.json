@@ -1,0 +1,9 @@
+{
+  "rewrites":  [
+    {"src": "/", "destination": "/"},
+    {"src": "/watchlist", "destination": "/"},
+    {"src": "/search", "destination": "/"},
+    {"src": "/about", "destination": "/"},
+    {"src": "/movie:id", "destination": "/"}
+  ]
+}
