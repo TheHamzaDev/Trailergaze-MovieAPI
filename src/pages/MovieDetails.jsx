@@ -13,12 +13,12 @@ const MovieDetails = () => {
   const { year } = location.state;
 
   const MOVIE_TRAILER =
-    "http://api.themoviedb.org/3/movie/" +
+    "https://api.themoviedb.org/3/movie/" +
     id +
     "/videos?api_key=77c4dbe7e827bbe92b720b38af14e9d5";
 
   const MOVIE_DIRECTOR =
-    "http://api.themoviedb.org/3/movie/" +
+    "https://api.themoviedb.org/3/movie/" +
     id +
     "/credits?api_key=77c4dbe7e827bbe92b720b38af14e9d5";
 
