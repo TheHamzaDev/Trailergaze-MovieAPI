@@ -1,9 +1,0 @@
-{
-  "rewrites":  [
-    {"source": "/", "destination": "/"},
-    {"source": "/watchlist", "destination": "/"},
-    {"source": "/search", "destination": "/"},
-    {"source": "/about", "destination": "/"},
-    {"source": "/movie:id", "destination": "/"}
-  ]
-}
