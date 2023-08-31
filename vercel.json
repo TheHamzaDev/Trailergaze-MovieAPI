@@ -1,9 +1,9 @@
 {
   "rewrites":  [
-    {"src": "/", "destination": "/"},
-    {"src": "/watchlist", "destination": "/"},
-    {"src": "/search", "destination": "/"},
-    {"src": "/about", "destination": "/"},
-    {"src": "/movie:id", "destination": "/"}
+    {"source": "/", "destination": "/"},
+    {"source": "/watchlist", "destination": "/"},
+    {"source": "/search", "destination": "/"},
+    {"source": "/about", "destination": "/"},
+    {"source": "/movie:id", "destination": "/"}
   ]
 }
