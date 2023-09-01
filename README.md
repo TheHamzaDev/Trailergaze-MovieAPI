@@ -1,4 +1,4 @@
-## Trailergaze
+#### Trailergaze
 A simple movie API website that allows users to find the currently most popular movies, view their details, including the most recent trailer, an overview, director(s) and the cast. 
 
 Users can also add the movies to their watchlist where it is saved on to their local storage and search for their favourite movie.
