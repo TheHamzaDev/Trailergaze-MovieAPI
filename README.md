@@ -8,7 +8,7 @@ This project was made with React.JS, Tailwind CSS, Framer Motion, Context API an
 The website is responsive and can be viewed on both desktop and mobile devices.
 
 ## Demo
-Checkout the live demo and try it for yourself: [trailergaze.netlify.app/](trailergaze.netlify.app/)
+Checkout the live demo and try it for yourself: [trailergaze.netlify.app/](https://trailergaze.netlify.app/)
 
 ## Screenshots
 <img width="1909" alt="trailergaze homepage" src="https://github.com/TheHamzaDev/Collection-Ecommerce/assets/143728239/0c6ee114-0c81-42ad-b5b5-b5d4a88c81a7">
