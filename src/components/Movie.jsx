@@ -4,30 +4,12 @@ import Transition from "./Transition";
 import title_logo from "../assets/images/lg_title.svg";
 
 const Movie = () => {
-  const current = new Date();
-  const date = `${current.getFullYear()}-${
-    current.getMonth() < 10 ? `0${current.getMonth()}` : `${current.getMonth()}`
-  }-${
-    current.getDate() < 10 ? `0${current.getDate()}` : `${current.getDate()}`
-  }`;
-  const datePrevious = `${current.getFullYear() - 1}-${
-    current.getMonth() < 10 ? `0${current.getMonth()}` : `${current.getMonth()}`
-  }-${
-    current.getDate() < 10 ? `0${current.getDate()}` : `${current.getDate()}`
-  }`;
-
   const POPULAR_MOVIE_API_PAGE1 =
-    "https://api.themoviedb.org/3/discover/movie?api_key=77c4dbe7e827bbe92b720b38af14e9d5&primary_release_date.gte=" +
-    datePrevious +
-    "&primary_release_date.lte" +
-    date +
+    "https://api.themoviedb.org/3/discover/movie?api_key=77c4dbe7e827bbe92b720b38af14e9d5" +
     "&sort_by=popularity.desc&vote_count.gte=500&page=1&adult=false";
 
   const POPULAR_MOVIE_API_PAGE2 =
-    "https://api.themoviedb.org/3/discover/movie?api_key=77c4dbe7e827bbe92b720b38af14e9d5&primary_release_date.gte=" +
-    datePrevious +
-    "&primary_release_date.lte=" +
-    date +
+    "https://api.themoviedb.org/3/discover/movie?api_key=77c4dbe7e827bbe92b720b38af14e9d5" +
     "&sort_by=popularity.desc&vote_count.gte=500&page=2&adult=false";
 
   const [moviesPage1, setMoviesPage1] = useState([]);
@@ -61,9 +43,10 @@ const Movie = () => {
         </div>
         <img src={title_logo} />
       </header>
-      <div className="grid grid-cols-1 gap-y-20 gap-x-6 pt-4 pb-48 sm:grid-cols-2 lg:gap-y-32 lg:grid-cols-3 2xl:grid-cols-4">
-        {moviesAll.length > 0 &&
-          moviesAll.map((movie) => <MovieCard key={movie.id} {...movie} />)}
+      <div className="text-light  grid grid-cols-1 gap-y-20 gap-x-6 pt-4 pb-48 sm:grid-cols-2 lg:gap-y-32 lg:grid-cols-3 2xl:grid-cols-4">
+        {moviesAll.length > 0
+          ? moviesAll.map((movie) => <MovieCard key={movie.id} {...movie} />)
+          : "no movies"}
       </div>
     </section>
   );
